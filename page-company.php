@@ -1,5 +1,6 @@
-<?php /* Template Name: 会社概要 
-Template Post Type: post, page, event　*/ 
+<?php
+ /* Template Name: 会社概要 
+Template Post Type: post, page, event*/ 
 ?>
 
 <?php get_header(); ?>

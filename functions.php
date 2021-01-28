@@ -21,3 +21,25 @@
 
     }
 add_action("wp_enqueue_scripts","sakura_theme_link");
+
+
+
+
+
+
+
+     
+function sakura_theme_init() {
+    register_post_type('daily', [ // 投稿タイプ名の定義
+        'labels' => [
+            'name'=> '日報', // 管理画面上で表示する投稿タイプ名
+           
+        ],
+        'public'=> true,  // 投稿タイプをpublicにするか
+        'show_in_rest'  => true,
+        
+    ]);
+}
+
+
+        add_action("init","sakura_theme_init");
