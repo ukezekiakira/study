@@ -79,7 +79,8 @@ echo "今日は".date("Y/m/d").$week[$w]."です";
                     <div class="blog-info">
                         <h2><?php the_title(); ?></h2>
                         <p><?php the_content(); ?></p>
-                        <a href="#"><?php the_category(); ?></a><a href="#"><?php the_time(); ?></a>
+                        <a href="#"><?php the_category(); ?></a>
+                        <a href="#"><?php the_time(); ?></a>
                     </div>
                 </div>
 
