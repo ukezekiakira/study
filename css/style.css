@@ -1,0 +1,11 @@
+/* 共通用のCSS */
+.main-content{
+    max-width: 800px;
+    margin: auto;
+    min-height: 100vh;
+
+
+}
+.day__img{
+    width: 300px;
+}

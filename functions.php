@@ -8,6 +8,7 @@
 
     
     function sakura_theme_link() {
+        wp_enqueue_style("common-css",get_template_directory_uri() . "/./css/style.css" );
 
         wp_enqueue_style("pc-css",get_template_directory_uri() . "/./css/style_pc.css",array(),"1.0.0","screen and ( min-width:769px )" );
         wp_enqueue_style("sp-css",get_template_directory_uri() . "/./css/style_sp.css",array(),"1.0.0","screen and ( max-width:768px )");
@@ -30,7 +31,7 @@ add_action("wp_enqueue_scripts","sakura_theme_link");
 
      
 function sakura_theme_init() {
-    register_post_type('daily', [ // 投稿タイプ名の定義
+    register_post_type("daily", [ // 投稿タイプ名の定義
         'labels' => [
             'name'=> '日報', // 管理画面上で表示する投稿タイプ名
            
