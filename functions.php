@@ -38,7 +38,8 @@ function sakura_theme_init() {
         ],
         'public'=> true,  // 投稿タイプをpublicにするか
         'show_in_rest'  => true,
-        
+        "hierarchical"=> true,
+        "has_archive"=>true,
     ]);
 }
 
